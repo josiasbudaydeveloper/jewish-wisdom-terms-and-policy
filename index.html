@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewish Wisdom - Terms & Policies</title>
+  <meta name="description"
+    content="Official legal documentation, Terms of Service, and Privacy Policy for Jewish Wisdom.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <style>
+    :root {
+      --bg-page: #e6eeff;
+      --bg-card: #ffffff;
+      --text-heading: #0F172A;
+      --text-body: #475569;
+      --text-muted: #94A3B8;
+      --primary-blue: #2563EB;
+      --primary-blue-hover: #1D4ED8;
+      --primary-blue-light: #e6eeff;
+      --border-color: #E2E8F0;
+      --border-hover: #BFDBFE;
+      --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+      --shadow-hover: 0 8px 24px rgba(37, 99, 235, 0.12);
+      --radius-card: 16px;
+      --radius-item: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      background-color: var(--bg-card);
+      border-radius: var(--radius-card);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+    }
+
+    /* Logo & Header */
+    .brand-header {
+      margin-bottom: 24px;
+    }
+
+    .logo-container {
+      margin-bottom: 16px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .logo-img {
+      width: 76px;
+      height: 76px;
+      border-radius: 18px;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.16);
+      border: 2px solid #ffffff;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+
+    .logo-container:hover .logo-img {
+      transform: scale(1.05);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+    }
+
+    .brand-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--text-heading);
+      font-size: 26px;
+      font-weight: normal;
+      margin: 0 0 8px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      color: var(--text-body);
+      font-size: 15px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--border-color);
+      margin: 24px 0;
+      border: none;
+    }
+
+    /* Link Cards / Buttons */
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .policy-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 18px;
+      background-color: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-item);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      text-align: left;
+      user-select: none;
+    }
+
+    .policy-link:hover {
+      border-color: var(--primary-blue);
+      background-color: #fbfdff;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .policy-link:active {
+      transform: translateY(0);
+    }
+
+    .policy-link:focus-visible {
+      outline: 2px solid var(--primary-blue);
+      outline-offset: 2px;
+    }
+
+    .policy-link-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .link-icon-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background-color: var(--primary-blue-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-blue);
+      flex-shrink: 0;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .policy-link:hover .link-icon-badge {
+      background-color: #dbe8fe;
+      transform: scale(1.05);
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .link-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-heading);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .link-desc {
+      font-size: 13px;
+      color: var(--text-body);
+      line-height: 1.4;
+    }
+
+    .status-badge {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background-color: #FEF3C7;
+      color: #92400E;
+    }
+
+    .arrow-icon {
+      color: var(--text-muted);
+      transition: transform 0.2s ease, color 0.2s ease;
+      flex-shrink: 0;
+      margin-left: 8px;
+    }
+
+    .policy-link:hover .arrow-icon {
+      color: var(--primary-blue);
+      transform: translateX(3px);
+    }
+
+    /* Highlight Banner matching email identity */
+    .token-preview-box {
+      background-color: var(--primary-blue-light);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 20px 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px dashed rgba(37, 99, 235, 0.25);
+    }
+
+    .token-preview-box span {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--primary-blue);
+    }
+
+    /* Footer */
+    .card-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+    }
+
+    .footer-help {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .footer-help a {
+      color: var(--primary-blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .footer-help a:hover {
+      color: var(--primary-blue-hover);
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* Subtle custom toast alert notification */
+    .toast-notice {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #1E293B;
+      color: #ffffff;
+      padding: 12px 22px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      z-index: 1000;
+    }
+
+    .toast-notice.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Accessibility focus rings */
+    button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--primary-blue);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="main-container">
+
+    <!-- Header / Logo -->
+    <header class="brand-header">
+      <div class="logo-container">
+        <img src="icon.png" alt="Jewish Wisdom Logo" class="logo-img" width="76" height="76">
+      </div>
+      <h1 class="brand-title">Jewish Wisdom</h1>
+      <p class="brand-subtitle">Legal Documentation</p>
+    </header>
+
+    <div class="divider" role="presentation"></div>
+
+    <!-- Navegation / Legal Documents -->
+    <nav class="links-list" aria-label="Legal documents">
+
+      <!-- Privacy Policy Link -->
+      <a href="privacy_policy.html" class="policy-link" id="privacy-policy-link" title="Read our Privacy Policy">
+        <div class="policy-link-content">
+          <div class="link-icon-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-title">Privacy Policy</span>
+            <span class="link-desc">How we protect, handle, and respect your data</span>
+          </div>
+        </div>
+        <div class="arrow-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Terms of Service Link -->
+      <a href="javascript:void(0)" class="policy-link" id="terms-of-service-link" onclick="handleTermsClick(event)"
+        onkeydown="handleTermsKeydown(event)" role="button" tabindex="0" title="Terms of Service (Not available yet)">
+        <div class="policy-link-content">
+          <div class="link-icon-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-title">
+              Terms of Service
+              <span class="status-badge">Coming Soon</span>
+            </span>
+            <span class="link-desc">Rules, usage guidelines, and agreements</span>
+          </div>
+        </div>
+        <div class="arrow-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </div>
+      </a>
+
+    </nav>
+
+    <!-- Footer -->
+    <footer class="card-footer">
+      <p class="footer-help">
+        Need assistance? Contact <a href="mailto:support@tgw.solutions">support@tgw.solutions</a>
+      </p>
+      <p class="footer-copy">
+        &copy; 2026 Jewish Wisdom. All rights reserved.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- In-page toast notification -->
+  <div id="toast" class="toast-notice" role="alert" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="12" y1="8" x2="12" y2="12" />
+      <line x1="12" y1="16" x2="12.01" y2="16" />
+    </svg>
+    <span>Not available yet</span>
+  </div>
+
+  <script>
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.querySelector('span').textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    function handleTermsClick(event) {
+      if (event) {
+        event.preventDefault();
+      }
+      // Send the requested alert
+      alert("Not available yet");
+      // Also show subtle toast notification
+      showToast("Not available yet");
+    }
+
+    function handleTermsKeydown(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        handleTermsClick(event);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
